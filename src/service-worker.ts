@@ -61,3 +61,15 @@ self.addEventListener('message', (event) => {
   }
 });
 
+
+// service-worker.js
+
+// self.addEventListener('install', (event) => {
+//   self.skipWaiting(); // Skip waiting immediately
+// });
+
+// self.addEventListener('activate', (event) => {
+//   event.waitUntil(self.clients.claim());
+// });
+
+

@@ -1,34 +1,63 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState, useCallback, Suspense } from 'react';
 import './App.css';
 import Router from './Routes/routes';
-import { useServiceWorker } from './useServiceWorker';
-import Swal from 'sweetalert2';
-import PopupTopupSuccess from './components/PopupTopupSuccess';
-import { useNavigate } from 'react-router-dom';
-function App() {
-  const { waitingWorker, showReload, reloadPage } = useServiceWorker();
-  const [toggle, settoggle] = useState<boolean>(false);
-  const navigate = useNavigate();
+import { Button, Snackbar } from '@material-ui/core';
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import LoadingScreen from './LoadingScreen';
+import LoadingScreen2 from './LoadingScreen2';
 
-useEffect(() => {
-  if (showReload && waitingWorker) {
-    Swal.fire({
-      title: 'Found a new Version!',
-      text: 'New Update Available!',
-      icon: 'success',
-      confirmButtonText: 'Update now!'
-    }).then(() => {
-      reloadPage()
-    })
-  }  else {
-    console.log("No update available!");
-  }
-}, [waitingWorker, showReload, reloadPage]);
+function App() {
+  const [showReload, setShowReload] = useState(false);
+  const [installingWorker, setInstallingWorker] = useState<ServiceWorker | null>(null);
+
+  
+  const onSWUpdate = useCallback((registration: ServiceWorkerRegistration) => {
+    setShowReload(true);
+    setInstallingWorker(registration.waiting);
+  }, []);
+
+  useEffect(() => {
+    serviceWorkerRegistration.register({
+      onUpdate: onSWUpdate
+    });
+  }, [onSWUpdate]);
+
+  const reloadPage = useCallback(() => {
+    if (installingWorker) {
+      installingWorker.addEventListener("statechange", (event) => {
+        if (event.target && (event.target as ServiceWorker).state === "activated") {
+          setShowReload(false);
+          window.location.reload();
+        }
+      });
+      installingWorker.postMessage({ type: "SKIP_WAITING" });
+    }
+  }, [installingWorker]);
 
   return (
     <>
-      <Router />
+      {/* <Suspense fallback={<LoadingScreen />}> */}
+        <div>
+          <Snackbar
+            open={showReload}
+            message="A new version is available!"
+            onClick={reloadPage}
+            data-test-id="screens-new-version-snackbar"
+            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            action={
+              <Button
+                color="inherit"
+                size="small"
+                onClick={reloadPage}
+              >
+                Reload
+              </Button>
+            }
+          />
+          <Router />
+        </div>
+      {/* </Suspense> */}
+
     </>
   );
 }

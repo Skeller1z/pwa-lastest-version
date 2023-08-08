@@ -5,7 +5,6 @@ import Navbar from "../components/LogoutMenuCom/Navbar"
 import WhyUsSection from "../components/LogoutMenuCom/WhyUsSection"
 
 const MainPage = () => {
-
   return (
     <>
       <Navbar />

@@ -7,19 +7,18 @@ import Bg2 from '../../Assets/images/bg2.jpg'
 import Bg from '../../Assets/images/bg.jpg'
 import b4 from '../../image/Banner Pricing.png'
 import { Link } from 'react-router-dom'
+import bg5 from '../../image/BSV.png'
 
 function HomeSection() {
-
     return (
         <section className='h-screen flex items-center justify-center ' id='HomeSection' style={{ backgroundImage: `url(${Bg})`, backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 bg-white rounded-xl shadow-lg bg-opacity-75 backdrop-filter backdrop-blur-sm animate-fade-down animate-delay-20100 animate-once animate-duration-20500 ">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none bg-gradient-to-r from-purple-800 via-pink-800 to-red-800 text-transparent bg-clip-text  md:text-5xl lg:text-6xl dark:text-white animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">BSV Console</h1>
-                <img src={b4} className='mr-5 mb-5 lg:mb-0 h-[60px]' alt='NinjaVan'/>
                 <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel minima aliquid ut totam id exercitationem architecto, sequi fuga quos sed quisquam animi eveniet ab soluta natus aliquam vero! Eligendi, dolorum?</p>
                 <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                     <div
                         className="cursor-pointer shadow-md inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000"
-                        
+
                     >
                         Sign in!
                         <svg className="ml-2 -mr-1 w-5 h-5 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
@@ -43,10 +42,44 @@ function HomeSection() {
                     <span className="font-semibold text-gray-700 uppercase animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">GAIN THE TRUST BY</span>
                     <span className="font-semibold text-gray-700 uppercase animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">GAIN THE TRUST BY</span>
                     <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000 ">
-                        <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry'/>
-                        <img src={Flash} className='mr-5 mb-5 lg:mb-0 h-[40px]' alt='Flash'/>
-                        <img src={THPost} className='mr-5 mb-5 lg:mb-0 h-[50px]' alt='THPost'/>
-                        <img src={NinjaVan} className='mr-5 mb-5 lg:mb-0 h-[60px]' alt='NinjaVan'/>
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                        <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+                        <img src={Flash} className='mr-5 mb-5 lg:mb-0 h-[40px]' alt='Flash' />
+                        <img src={THPost} className='mr-5 mb-5 lg:mb-0 h-[50px]' alt='THPost' />
+                        <img src={NinjaVan} className='mr-5 mb-5 lg:mb-0 h-[60px]' alt='NinjaVan' />
                     </div>
                 </div>
             </div>
