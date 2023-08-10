@@ -38,9 +38,6 @@ function HomeSection() {
                 </div>
                 <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
                     <span className="font-semibold text-gray-700 uppercase animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">GAIN THE TRUST BY</span>
-                    <span className="font-semibold text-gray-700 uppercase animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">GAIN THE TRUST BY</span>
-                    <span className="font-semibold text-gray-700 uppercase animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">GAIN THE TRUST BY</span>
-                    <span className="font-semibold text-gray-700 uppercase animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000">GAIN THE TRUST BY</span>
                     <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between animate-fade-down animate-once animate-ease-linear animate-delay-21000 animate-duration-25000 ">
                     <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
                     <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
@@ -75,7 +72,7 @@ function HomeSection() {
                     <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
                     <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
                     <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
-                    <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
+
                         <img src={Kerry} className='mr-5 mb-5 lg:mb-0 h-[100px]' alt='Kerry' />
                         <img src={Flash} className='mr-5 mb-5 lg:mb-0 h-[40px]' alt='Flash' />
                         <img src={THPost} className='mr-5 mb-5 lg:mb-0 h-[50px]' alt='THPost' />
